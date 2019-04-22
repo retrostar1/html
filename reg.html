@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>суперсайт</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <ol type="I">
+            <li><a href="task1.html" target="_blank">главная</a></li>
+            <li><a href="task2.html" target="_blank">галерея</a></li>
+            <li><a href="task3.html" target="_blank">информация</a></li>
+            <li><a href="aut.html" target="_blank">авторизация</a></li>
+            <li><a href="reg.html" target="_self">регистрация</a></li>
+            <li><a href="task1.html#vk" target="_blank">контакты</a></li>
+        </ol>
+        <br>
+        <form 
+        action="#" 
+        method="get" 
+        autocomplete="on" 
+        enctype="multipart/form-data"
+        name="registation">
+            <fieldset>
+                <legend>Введите логин</legend>
+                <input 
+                type="login" 
+                placeholder="введите логин"
+                minlength="7"
+                maxlength="11"
+                required>
+                <br>
+                <br>
+                <legend>Введите email</legend>
+                <input 
+                type="email" 
+                placeholder="введите email"
+                required>
+                <br>
+                <br>
+                <legend>Пароль</legend>
+                <input 
+                type="password"
+                placeholder="введите пароль"
+                minlength="6"
+                required>
+                <br>
+                <br>
+                <legend>Подтвердите пароль</legend>
+                <input 
+                type="password"
+                placeholder="подтвердите пароль"
+                minlength="6"
+                required><!--я не очень поняла, как можно проверить, ввел ли пользователь тот же пароль или нет-->
+                <br>
+                <br>
+                <legend>Загрузить изображение</legend>
+                <input 
+                type="file"
+                accept="image/*">
+                <br>
+                <br>
+                <input type="submit" value="авторизоваться">
+            </fieldset>
+        </form>    
+    </body>
+</html>
