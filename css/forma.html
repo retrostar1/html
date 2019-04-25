@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>forma</title>
+            <link rel="stylesheet" href="style_hw.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">главная</a></li>
+                <li><a href="#">галерея</a></li>
+                <li><a href="#">информация</a></li>
+                <li><a href="#">войти</a></li>
+            </ul>
+        </nav>
+        <br>
+        <form 
+            action="#" 
+            method="get" 
+            autocomplete="on" 
+            enctype="multipart/form-data"
+            name="forma">
+                <fieldset>
+                    <legend><strong>здравствуйте уважаемый!</strong></legend>
+                    <p>
+                    <legend>как вы нашли информацио о нас</legend>
+                        <select>
+                            <option>из интернета</option>
+                            <option selected>услышал от друзей</option>
+                            <option>интуиция</option>
+                        </select>
+                    </p>
+                    <p>
+                    <legend>куда вы хотите пойти</legend>
+                    <br>
+                        <label><input type="checkbox">в кино</label>
+                        <br>
+                        <label><input type="checkbox">в ресторан</label>
+                        <br>
+                        <label><input type="checkbox" checked>в музей</label>
+                    </p>
+                    <p>
+                    <legend>зачем это вам</legend>
+                    <br>
+                        <label><input type="radio" name="reason[]">развлечение</label>
+                        <br>
+                        <label><input type="radio" name="reason[]" checked>исследование</label>
+                        <br>
+                        <label><input type="radio" name="reason[]">обязательство</label>
+                    </p>
+                    <p><strong>а теперь о вас</strong></p>
+                    <p>
+                    <legend>расскажите о себе</legend>
+                        <textarea 
+                            cols="50" rows="10"
+                            autofocus required
+                            placeholder="что вы предпочитаете"></textarea>
+                    </p>
+                    <p>
+                    <legend>желательно в видео</legend>
+                        <input type="file"
+                        multiple
+                        accept="video/*">
+                    </p>
+                </fieldset>
+        </form>
+    </body>
+<html></html>

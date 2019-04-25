@@ -1,0 +1,16 @@
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    width: 24%;
+}
+nav {
+    background-color: papayawhip;
+    border: 1px solid pink;
+}
+body {
+    background-image: url(images/sea.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}

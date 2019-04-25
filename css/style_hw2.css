@@ -1,0 +1,12 @@
+.photo {
+    height: 100px;
+    width: 100px;
+}
+.read {
+    border: 1px solid pink;
+    background-color: plum;
+    border-radius: 20px;
+}
+.author {
+    color: brown;
+}
