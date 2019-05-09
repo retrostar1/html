@@ -1,0 +1,46 @@
+@import url("./grid.css");
+body {
+    margin: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card {
+    height: 30px;
+    border: 1px solid seagreen;
+    border-radius: 10px;
+    background-color: skyblue;
+    margin: 5px;
+}
+.sidebar {
+    height: calc(30px * 3 + 5px * 5);
+    
+}
+.sidebar li {
+    display: none;
+    padding: 0;
+}
+.sidebar li.active {
+    display: block;
+    height: 100%;
+}
+.sidebar li.active img {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+}
+.text {/*не поняла, то ли это, что требовалось или нужно было что-то другое*/
+    color: red;
+    font-size: 1.2em;
+    position: absolute;
+    top: 15px;
+    left: 820px;
+}
