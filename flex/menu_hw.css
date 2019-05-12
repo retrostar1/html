@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    left:0;
+    top:30px;
+    padding:0;
+}
+li:hover > .sub-menu {
+    display: block;
+}
+a:hover {
+    color: yellowgreen;
+    background: rgb(36, 98, 128);
+}
+a:link {
+    color: rgb(0, 204, 255);
+}
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding:10px 15px;
+    position: relative;
+}
+/*.flex {
+    justify-content: space-between;
+}*/
+.menu > ul {
+    margin:0 auto;
+    padding:0px;
+    text-align: start;
+    width: 100%;   
+}
+nav {
+    width: 100%;
+    background-color: papayawhip;
+    height: 100px;
+}
+.modal {
+    display: none;
+}
+.modal:target {
+    display: block;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    bottom: 200px;
+    left: 100px;
+    color: antiquewhite;
+    background: rgb(37, 37, 35);
+}
+input[type="password"] {
+    color: gray;
+}
+input[type="email"] {
+    color: gray;
+}
