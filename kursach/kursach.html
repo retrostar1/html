@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>карта мест петербурга</title>
+        <link rel="stylesheet" href="kartamest.css">
+    </head>
+    <body>
+        <header>
+            <h3>Карта мест Петербурга</h3>
+        </header>
+        <div class="container">
+            <div id="map" class="map">
+                <img src="img/karta.jpg" alt="извините, изображение недоступно">
+            </div>
+            <div id="tabs" class="tabs">
+                <ul class="tabs_new">
+                    <li>
+                        <input type="radio" name="tabs" id="tab1" checked>
+                        <label for="tab1">кофе</label>
+                        <div class="tab-content">
+                            <ol class="coffee">
+                                <li><a href="#modal">характер кофе</a></li>
+                                    <div id="modal" class="modal">
+                                        <p>информация
+                                            <button>
+                                                <a href="#">Х</a>
+                                            </button>
+                                        </p>
+                                    </div>
+                                <li><a href="#">gran</a></li>
+                                <li><a href="#">civil</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="tabs" id="tab2">
+                        <label for="tab2">еда/ бар</label>
+                        <div class="tab-content">
+                            <ol class="bars">
+                                <li><a href="#">co-op garage</a></li>
+                                <li><a href="#">brat</a></li>
+                                <li><a href="#">every dog</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="tabs" id="tab3">
+                        <label for="tab3">кино/ книги</label>
+                        <div class="tab-content">
+                            <ol class="books">
+                                <li><a href="#">все свободны</a></li>
+                                <li><a href="#">подписные издания</a></li>
+                                <li><a href="#">родина</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul> 
+            </div>    
+        </div>
+        <footer>
+            <address><a href="https://www.instagram.com/dezy_balde">предложить место</a></address>
+            <a href="https://www.instagram.com/dezy_balde"><img src="img/insta.png" alt="извините, изображение недоступно"></a>
+        </footer>
+    </body>
+</html>

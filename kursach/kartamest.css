@@ -1,0 +1,152 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "header-grid"
+    /*"map-grid places-grid"*/
+    "main-grid"
+    "footer-grid";
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto 60px;
+}
+header {
+    grid-area: header-grid;
+}
+footer {
+    grid-area: footer-grid;
+}
+.container {
+    grid-area: main-grid;
+}
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /*grid-gap: 10px;*/
+    grid-column-gap: 10px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding: 0;
+    width: 80%;
+    /*background-image: url("img/karta.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;*/
+}
+#map {
+    display: grid;
+    /*width: 60%;*/
+    border: 2px solid black;
+}
+.map img {
+    display: grid;
+    /*max-width: 100%;
+    max-height: 100%;*/
+}
+h3 {
+    display: grid;
+    margin-top: 50px;
+    text-align:center;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+/*div li.class {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid black;
+}
+div li.class:last-child {
+    border-right: none;*/
+
+#tabs {
+    border: 2px solid black;
+}
+.tabs_new > li:hover {
+    background-color: rgb(150, 194, 192);
+    cursor: pointer;
+}
+
+.tabs_new {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    position: relative;
+    height: 50px;
+    font-size: 1.1em;
+    margin:0 0;
+    padding:0px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.tabs_new li > input {
+	display: none;
+}
+.tabs_new li > label {
+    height: 100%;
+    display: block;
+    border-right-width: 0;
+    border-bottom-width: 0;
+}
+
+.tabs_new .tab-content {
+    text-align: left;
+	display: none;
+	position: absolute;
+    left: 0;
+	padding: 10px 0 0;
+    border-top: 2px solid black;
+    height: 100%;
+    width: 100%
+}
+ 
+/* Функциональность: */
+ 
+.tabs_new li > input:checked + label {
+	background-color: rgb(150, 194, 192);
+}
+.tabs_new li > input:checked ~ .tab-content {
+	display: block;
+}
+a:link {
+    color: black;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+ol > li:hover {
+    background-color: rgb(206, 202, 202);
+}
+
+a > img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 25px;
+    width: 25px;
+}
+footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgb(206, 202, 202);
+}
+
+footer > a {
+    text-decoration: darkslategrey;
+}
+.modal {
+    display: none;
+}
+.modal:target {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: antiquewhite;
+    background: rgb(37, 37, 35);
+    text-align: center;
+}
