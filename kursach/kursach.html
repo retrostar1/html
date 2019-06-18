@@ -4,6 +4,12 @@
         <meta charset="UTF-8">
         <title>карта мест петербурга</title>
         <link rel="stylesheet" href="kartamest.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
     </head>
     <body>
         <header>
@@ -11,7 +17,7 @@
         </header>
         <div class="container">
             <div id="map" class="map">
-                <img src="img/karta.jpg" alt="извините, изображение недоступно">
+                <!-- <img src="img/karta.jpg" alt="извините, изображение недоступно"> -->
             </div>
             <div id="tabs" class="tabs">
                 <ul class="tabs_new">
@@ -20,16 +26,16 @@
                         <label for="tab1">кофе</label>
                         <div class="tab-content">
                             <ol class="coffee">
-                                <li><a href="#modal">характер кофе</a></li>
-                                    <div id="modal" class="modal">
+                                <li><a href="#modal" name="Характер кофе" data-index="0">характер кофе</a></li>
+                                    <!-- <div id="modal" class="modal">
                                         <p>информация
                                             <button>
                                                 <a href="#">Х</a>
                                             </button>
                                         </p>
-                                    </div>
-                                <li><a href="#">gran</a></li>
-                                <li><a href="#">civil</a></li>
+                                    </div> -->
+                                <li><a href="#" name="gran" data-index="1">gran</a></li>
+                                <li><a href="#" name="civil" data-index="2">civil</a></li>
                             </ol>
                         </div>
                     </li>
@@ -38,9 +44,9 @@
                         <label for="tab2">еда/ бар</label>
                         <div class="tab-content">
                             <ol class="bars">
-                                <li><a href="#">co-op garage</a></li>
-                                <li><a href="#">brat</a></li>
-                                <li><a href="#">every dog</a></li>
+                                <li><a href="#" name="co-op garage" data-index="3">co-op garage</a></li>
+                                <li><a href="#" name="brat" data-index="4">brat</a></li>
+                                <li><a href="#" name="every dog" data-index="5">every dog</a></li>
                             </ol>
                         </div>
                     </li>
@@ -59,8 +65,11 @@
             </div>    
         </div>
         <footer>
+            <button id="mapButton">добавить</button>
             <address><a href="https://www.instagram.com/dezy_balde">предложить место</a></address>
             <a href="https://www.instagram.com/dezy_balde"><img src="img/insta.png" alt="извините, изображение недоступно"></a>
         </footer>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
